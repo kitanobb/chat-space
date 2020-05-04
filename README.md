@@ -7,9 +7,9 @@
 |email|string|null: false|
 
 ### Association
-- has_many: groups, through: menbers
+- has_many: groups, through: :members
 - has_many: messages
-- has_many: menbers	
+- has_many: members	
 
 ## groups table
 
@@ -18,16 +18,16 @@
 |name|string|index: true, null: false, unique: true|
 
 ### Association
-- has_many: users, through: menbers
+- has_many: users, through: :members
 - has_many: messages
-- has_many: menbers
+- has_many: members
 
-## menbers table
+## members table
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to: group
@@ -37,10 +37,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|string||
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
