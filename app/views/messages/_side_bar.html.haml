@@ -1,3 +1,13 @@
 .sidebar
   .sidebar__user-name
+    .top-items
+      %p.top-items__name
+        username
+      %ul.top-items__icons
+        %li
+          = link_to "#" do
+            = icon('far', 'edit', class: 'top-items__icons--icon')
+        %li
+          = link_to "#" do
+            = icon('fas', 'cog', class: 'top-items__icons--icon')
   .sidebar__menu
