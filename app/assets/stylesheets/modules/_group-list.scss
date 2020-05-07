@@ -1,21 +1,21 @@
 .group-list {
   height: calc(100vh - 100px);
-  background-color: #2f3e51;
+  background-color: $color-dim;
 
   &__unit {
     padding: 20px 20px 40px 20px;
   }
-
-  &__heading {
-    font-size: 15px;
-    color: #ffffff;
+  %grouptext {
+    color: $color-white;
     font-weight: bold;
-    padding-bottom: 5px;
   }
-
+  &__heading {
+    padding-bottom: 5px;
+    @extend %grouptext;
+    font-size: 15px;
+  }
   &__lead {
+    @extend %grouptext;
     font-size: 11px;
-    color: #ffffff;
-    font-weight: bold;
   }
 }

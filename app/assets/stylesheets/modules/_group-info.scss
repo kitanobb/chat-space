@@ -1,45 +1,42 @@
 .group-info {
-  height: 99px;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  height: 99px;
   padding: 0 40px;
+  border-bottom: 1px solid $color-border;
+  background-color: $color-white;
   
   &__head {
     padding-top: 35px;
   }
-
   &__title {
-    color: #333333;
-    font-size: 20px;
     padding-bottom: 15px;
+    color: $color-title;
+    font-size: 20px;
   }
-
   &__detail {
-    color: #999999;
+    color: $color-thin;
     font-size: 12px;
   }
-
   &__edit-btn {
-    font-size: 16px;
+    position: relative;
     width: 72px;
     height: 40px;
     line-height: 38px;
-    position: relative;
+    font-size: 16px;
   }
-  
   &__edit-btn a {
-    color: #38aef0;
-    text-decoration: none;
-    padding: 0 19px;
-    border: 1px solid #38aef0;
-
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    padding: 0 19px;
+    border: 1px solid $color-accent;
+    
+    text-decoration: none;
+    color: $color-accent;
   }
 }

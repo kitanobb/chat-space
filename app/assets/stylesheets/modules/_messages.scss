@@ -1,7 +1,7 @@
 .messages {
   height: calc(100vh - 190px);
-  background-color: #fafafa;
   padding-top: 35px;
+  background-color: $color-light;
   
   &__unit {
     padding-left: 40px;
@@ -9,23 +9,23 @@
   }
   
   &__username {
-    color: #333333;
-    font-size: 16px;
     display: flex;
     padding-bottom: 12px;
+    color: $color-title;
+    font-size: 16px;
     font-weight: bold;
   }
 
   &__date {
-    color: #999999;
-    font-size: 12px;
     padding-left: 5px;
+    color: $color-thin;
+    font-size: 12px;
     font-weight: normal;
   }
 
   &__text {
     display: block;
-    color: #434a54;
+    color: $color-text;
     font-size: 14px;
   }
 }
