@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def update
     if current_user.update
-      
+      redirect_to root_path
     else
       
     end
