@@ -1,0 +1,45 @@
+.post-form {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 40px;
+  background-color: $color-nutral;
+  
+  &__input-unit {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 50px;
+    background-color: $color-white;
+  }
+  &__input-area {
+    width: calc(100vw - 380px - 115px);
+    height: 50px;
+    padding: 0 10px;
+    border: 0;
+  }
+  &__img-btn {
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  &__input {
+    display: none;
+  }
+  &__snd-btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 15px;
+    padding: 0 19px;
+    background-color: $color-accent;
+    
+    text-decoration: none;
+    color: $color-white;
+    font-size: 16px;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
