@@ -1,0 +1,21 @@
+.group-list {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+
+  &__unit {
+    padding: 20px 20px 40px 20px;
+  }
+
+  &__heading {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  &__lead {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}

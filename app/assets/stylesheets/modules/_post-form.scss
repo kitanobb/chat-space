@@ -1,0 +1,50 @@
+.post-form {
+  height: 90px;
+  background-color: #d2d2d2;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  
+  
+  &__input-unit {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  &__input-area {
+    padding: 0 10px;
+    width: calc(100vw - 340px - 155px);
+    height: 50px;
+    border: 0;
+  }
+
+  &__img-btn {
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 2.5ex;
+    cursor: pointer;
+  }
+  
+  &__input {
+    display: none;
+  }
+  
+  &__snd-btn {
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    
+    background-color: #38aef0;
+    text-decoration: none;
+    padding: 0 19px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+}
