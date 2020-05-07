@@ -2,7 +2,7 @@
   .head-sec
     .head-sec__main-unit
       .head-sec__user-name
-        username
+        = current_user.name
       .head-sec__icons
         = link_to '#' do
           = icon('far', 'edit')
