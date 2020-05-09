@@ -5,6 +5,9 @@
   &__unit {
     padding: 20px 20px 40px 20px;
   }
+  &__unit a {
+    text-decoration: none;
+  }
   %grouptext {
     color: $color-white;
     font-weight: bold;
