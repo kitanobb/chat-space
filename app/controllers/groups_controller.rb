@@ -7,5 +7,10 @@ class GroupsController < ApplicationController
 
   def create
   end
+
+  private
+  def group_params
+    params.require(:group).permit(:name, user_ids: [])
+  end
   
 end
