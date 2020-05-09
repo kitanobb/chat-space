@@ -7,6 +7,11 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.new(group_params)
+    if @group.save
+
+    else
+
+    end
   end
 
   private
