@@ -4,4 +4,9 @@ class Group < ApplicationRecord
   has_many :messages
   
   validates :name, presence: true, uniqueness: true
+
+  def show_last_message
+    
+  end
+  
 end
