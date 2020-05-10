@@ -4,7 +4,9 @@
       .group-info__title
         = @group.name
       .group-info__detail
-        member : me
+        member: 
+        - @group.users.each do |user|
+          = user.name
     .group-info__edit-btn
       = link_to "#" do
         Edit
