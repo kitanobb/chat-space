@@ -1,8 +1,11 @@
 .messages
   %article.messages__unit
     .messages__username
-      username
+      = message.user.name
       .messages__date
-        2020/05/07(Thu) 02:59:00
-    %p.messages__text
-      おはよう〜！
+        = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+    .messages__text
+      - if message.body.present?
+        %p.messages__text
+          = message.body
+      = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
