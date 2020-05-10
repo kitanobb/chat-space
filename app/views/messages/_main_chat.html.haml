@@ -8,7 +8,9 @@
     .group-info__edit-btn
       = link_to "#" do
         Edit
-  -# メッセージのビュー
+  .messages
+    - @messages.each do |message|
+      = render partial: "message", locals: { message: message }
   = form_for [@group, @message] do |f|
     .post-form
       .post-form__input-unit
