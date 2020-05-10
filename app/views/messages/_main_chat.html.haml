@@ -8,28 +8,7 @@
     .group-info__edit-btn
       = link_to "#" do
         Edit
-  .messages
-    %article.messages__unit
-      .messages__username
-        username
-        .messages__date
-          2020/05/07(Thu) 02:59:00
-      %p.messages__text
-        おはよう〜！
-    %article.messages__unit
-      .messages__username
-        username
-        .messages__date
-          2020/05/07(Thu) 03:59:00
-      %p.messages__text
-        こんにちは！
-    %article.messages__unit
-      .messages__username
-        username
-        .messages__date
-          2020/05/07(Thu) 04:59:00
-      %p.messages__text
-        今日は朝から雨…
+  -# メッセージのビュー
   = form_for [@group, @message] do |f|
     .post-form
       .post-form__input-unit
