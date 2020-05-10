@@ -9,8 +9,7 @@
       = link_to "#" do
         Edit
   .messages
-    - @messages.each do |message|
-      = render partial: "message", locals: { message: message }
+    = render partial: 'message', collection: @messages
   = form_for [@group, @message] do |f|
     .post-form
       .post-form__input-unit
