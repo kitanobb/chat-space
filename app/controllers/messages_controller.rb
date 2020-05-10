@@ -10,6 +10,11 @@ class MessagesController < ApplicationController
     @message = @group.messages.new(message_paramas)
   end
 
+  private
+
+  def message_params
+  end
+
   def set_group
     @group = Group.find(params[:group_id])
   end
